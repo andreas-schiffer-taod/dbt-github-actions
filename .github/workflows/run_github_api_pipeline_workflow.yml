@@ -8,6 +8,7 @@ env:
 jobs:
   maybe_skip:
     runs-on: ubuntu-latest
+    environment: dev
     outputs:
       should_skip: ${{ steps.skip_check.outputs.should_skip }}
     steps:
